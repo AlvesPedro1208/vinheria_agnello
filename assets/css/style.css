@@ -23,6 +23,16 @@ body {
     justify-content: center;
 }
 
+.layout {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.layout > section {
+    max-width: 100%;
+}
+
 /* Container Mobile */
 .mobile-container {
     width: 100%;
