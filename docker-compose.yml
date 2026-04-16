@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  vinheria-app:
+    build: .
+    container_name: vinheria_tomcat
+    ports:
+      - "8080:8080"
+    # O 'volumes' permite que você edite o código e veja a mudança em tempo real 
+    # sem precisar reiniciar o container o tempo todo.
+    volumes:
+      - .:/usr/local/tomcat/webapps/ROOT
