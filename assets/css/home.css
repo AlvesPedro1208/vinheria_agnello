@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+h1{
+  text-align: center;
+  font-family: 'Libre Bodoni';
+  font-style: italic;
+  background-image: linear-gradient(to right, #4b1248, #7B2E6F, #4b1248);
+  color: transparent;
+  background-clip: text;
+}
+p{
+  text-align: center;
+  font-family: 'Libre Bodoni';
+  font-style: italic;
+  color: rgb(151,58,146);
+}
+img{
+  display: block;
+  margin: auto;
+}
+body{
+  margin: 0;
+}

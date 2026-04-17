@@ -1,0 +1,27 @@
+#barra{
+    position: relative;
+    background-size: cover;
+    height: 153px;
+    background: linear-gradient(to right, #4b1248, #7B2E6F 26%, #4b1248);
+}
+.circle{
+    position: absolute;
+    padding-top: 12px;
+}
+.menu{
+    position: absolute;
+}
+#icon{
+    margin-top: 62px;
+    margin-left: 27px;
+    margin-bottom: -86px;
+}
+#logo{
+    margin-top: 11px;
+    margin-left: 105px;
+}
+#cart{
+    margin-bottom: 0px;
+    margin-left: 330px;
+    margin-top: -77px;
+}
