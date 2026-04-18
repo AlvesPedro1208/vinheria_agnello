@@ -1,11 +1,95 @@
-
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div id="header">
         <div id="sombra-da-logo">
             <img class="circle" src="${pageContext.request.contextPath}/assets/img/Retangulo.png" alt="sombra">
         </div>
-        <div class="menu">
-            <img id="icon" src="${pageContext.request.contextPath}/assets/img/Menu-Icon.png" alt="menu">
+        <div class="header-menu">
+            <img id="icon"
+                 src="${pageContext.request.contextPath}/assets/img/Menu-Icon.png"
+                 alt="Menu"
+                 onclick="toggleMenu()">
             <img id="logo" src="${pageContext.request.contextPath}/assets/img/logo.png" alt="Vinheria Agnello">
             <img id="cart" src="${pageContext.request.contextPath}/assets/img/Carrinho.png" alt="Carrinho de compras">
         </div>
 </div>
+<div id="overlay" onclick="toggleMenu()"></div>
+<nav id="sidebar">
+    <div class="header-sidebar">
+        <h2>Harmonizações</h2>
+    </div>
+
+    <ul class="menu-sidebar">
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=carnes-vermelhas" >
+                Carnes Vermelhas
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=carnes-brancas">
+                Carnes Brancas
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=pizzas">
+                Pizzas
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=risotos">
+                Risotos
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=frutos-do-mar">
+                Frutos do Mar
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=japonesa">
+                Culinária Japonesa
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=hamburguer">
+                Hambúrguer
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=queijos">
+                Queijos
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=petiscos">
+                Petiscos
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=vegetariano">
+                Vegetariano
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+        <li><a href="${pageContext.request.contextPath}/vinhos?categoria=sobremesas">
+            Sobremesas
+            <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+        </a>
+        </li>
+        <li>
+            <a href="${pageContext.request.contextPath}/vinhos?categoria=massas">
+                Massas
+                <img src="${pageContext.request.contextPath}/assets/img/chevron-right.png" class="arrow-icon" alt="seta-direita">
+            </a>
+        </li>
+    </ul>
+</nav>
+

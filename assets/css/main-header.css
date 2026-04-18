@@ -1,24 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* HEADER PRINCIPAL */
 #header {
     position: relative;
     width: 100%;
-    max-width: 393px; /* igual mobile */
+    max-width: 393px;
     height: 120px;
     margin: 0 auto;
     overflow: hidden;
 
-    /* fundo roxo degradê */
-    background: linear-gradient(
-            180deg,
-            #4b1248 0%,
-            #7B2E6F 50%,
-            #9C3F86 75%,
-            #7B2E6F 88%,
-            #4b1248 100%
-    );
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1), transparent 60%),
+    linear-gradient(to right, #4b1248, #7B2E6F, #9C3F86, #7B2E6F, #4b1248);
 }
 
-/* SOMBRA / LUZ DA LOGO */
 #sombra-da-logo {
     position: absolute;
     top: 10px;
@@ -29,11 +27,10 @@
 
 .circle {
     width: 220px;
-    opacity: 0.4; /* deixa suave igual imagem */
+    opacity: 0.4;
 }
 
-/* MENU (linha principal) */
-.menu {
+.header-menu {
     position: relative;
     z-index: 2;
 
@@ -45,15 +42,99 @@
     height: 100%;
 }
 
-/* ÍCONE MENU */
-#icon {
+.icon {
     width: 26px;
     cursor: pointer;
 }
 
-/* CARRINHO */
 #cart {
     width: 26px;
     cursor: pointer;
+}
+
+.header-sidebar {
+    background: linear-gradient(180deg, #7A1E6C, #521945);
+    padding: 18px 20px;
+}
+
+.header-sidebar h2 {
+    color: #EAD7B7;
+    font-family: "Libre Bodoni", serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* SIDEBAR */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background-color: #E7DFDF;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+.menu-sidebar {
+    list-style: none;
+    padding-top: 15px;
+}
+
+.menu-sidebar li {
+    padding: 14px 20px;
+}
+
+.menu-sidebar a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu-sidebar span {
+    font-size: 18px;
+    color: #000;
+}
+
+.menu-sidebar li:hover {
+    background-color: #d8cfcf;
+    cursor: pointer;
+}
+
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 998;
+}
+
+#overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
 }
 

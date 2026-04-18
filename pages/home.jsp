@@ -6,8 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vinheria Agnello</title>
 
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/home.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main-header.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/home.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Bodoni:wght@400..700&display=swap" rel="stylesheet">
+
 
     </head>
     <body>
@@ -24,5 +28,7 @@
             <img src="${pageContext.request.contextPath}/assets/img/Map.png" alt="Vainheria Agnello">
             <img src="${pageContext.request.contextPath}/assets/img/Vinhos.png" alt="vinhos">
         </div>
+
+        <script src="${pageContext.request.contextPath}/assets/js/sidebar.js"></script>
     </body>
 </html>
